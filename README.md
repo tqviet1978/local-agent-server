@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ### 2. Configure
 
 ```bash
-cp config.example.json config.json
+cp config.json.example config.json
 ```
 
 Edit `config.json`:
