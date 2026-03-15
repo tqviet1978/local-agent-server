@@ -1,0 +1,23 @@
+[Unit]
+Description=Local Agent Server - Flask Backend
+After=network.target
+
+[Service]
+Type=notify
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/local-agent-server/src
+Environment="PATH=/var/www/local-agent-server/src/venv/bin"
+ExecStart=/var/www/local-agent-server/src/venv/bin/gunicorn \
+    --workers 2 \
+    --bind 0.0.0.0:5000 \
+    --timeout 120 \
+    --access-logfile /var/log/local-agent-server/access.log \
+    --error-logfile /var/log/local-agent-server/error.log \
+    app:app
+
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
