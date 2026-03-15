@@ -1,0 +1,14 @@
+{
+    "host": "0.0.0.0",
+    "port": 5100,
+    "debug": false,
+    "auth_token": "CHANGE_THIS_TO_A_STRONG_TOKEN",
+    "repositories": {
+        "my-project": {
+            "path": "/home/user/projects/my-project"
+        },
+        "another-repo": {
+            "path": "/home/user/projects/another-repo"
+        }
+    }
+}
