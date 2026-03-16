@@ -15,9 +15,9 @@ Before starting, confirm these values:
 
 | Parameter | Example | Description |
 |-----------|---------|-------------|
-| `REPO` | `crypto-alerts` | Repository code/ID (lowercase) |
-| `BASE_URL` | `https://local-agent-server.vietml.com` | API base URL |
-| `TOKEN` | `las@54321` | Bearer token |
+| `REPO` | `my-repo` | Repository code/ID (lowercase) |
+| `BASE_URL` | `https://local-agent-server.mydomain.com` | API base URL |
+| `TOKEN` | `my-secret-token` | Bearer token |
 
 Store these mentally for the entire session. Use them in every API call.
 
